@@ -5,9 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "svg": "svgr -d components/icons/ components/icons/svgs"
   },
   "dependencies": {
+    "@svgr/cli": "^5.5.0",
+    "gray-matter": "^4.0.2",
+    "marked": "^2.0.1",
     "next": "10.0.8",
     "react": "17.0.1",
     "react-dom": "17.0.1"
