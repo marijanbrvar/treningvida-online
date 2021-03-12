@@ -1,7 +1,7 @@
 ---
 title: Instruktori
 tagline:
-image:
+image: /img/radionica.png
 alt: 
 action:
 action-label:
