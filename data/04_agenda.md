@@ -2,7 +2,9 @@
 id: 4
 title: Agenda
 tagline: Šta online Trening vida obuhvata?
-image: 
+image:
+action:
+action-label:
 ---
 EDUKACIJA o metodi oporavka vida, istoriji vežbi za oči i brojnim istraživanjima čiji su rezultati potvrda da imamo kontrolu nad svojim vidom.
 

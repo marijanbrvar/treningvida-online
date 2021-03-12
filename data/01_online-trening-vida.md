@@ -3,6 +3,8 @@ id: 1
 title: Online Trening vida
 tagline: Za decu i odrasle
 image:
+action:
+action-label:
 ---
 Edukacija i razumevanje kako vid zaista funkcioniše ne treba da budu tajna. Verujem da svako može da razume osnovne koncepte zašto nastaju problemi sa vidom i kako se rešavaju prirodnim putem.
 

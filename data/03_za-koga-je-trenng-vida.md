@@ -2,7 +2,9 @@
 id: 3
 title: Za koga je online Trening vida?
 tagline: Ko su učesnici?
-image: 
+image:
+action:
+action-label:
 ---
 Online Trening vida je namenjen polaznicima sa sledećim problemima:
 
