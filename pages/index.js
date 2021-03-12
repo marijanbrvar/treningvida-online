@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from 'react'
 import fs from 'fs'
 import matter from 'gray-matter'
+import marked from 'marked'
 
 export default function Index({ title, description, content}) {
   const articles = content.map(doc => matter(doc.toString()))
@@ -14,17 +15,14 @@ export default function Index({ title, description, content}) {
         <title>{title}</title>
       </Head>
       <div>
-        <ul>
           {articles.map((article,i ) => (
-            <li key={i}>
+            <div key={i}>
               <h3>{article.data.title}</h3>
               <h4>{article.data.tagline}</h4>
-              <p>
-              {article.content}
-              </p>
-            </li>
+              <div dangerouslySetInnerHTML={{__html: marked(article.content)}}>
+              </div>
+            </div>
           ))}
-        </ul>
       </div>
     </>
   );
