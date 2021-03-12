@@ -15,6 +15,19 @@ export default function Index({ title, description, content }) {
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta charSet="utf-8" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="628" />
+        <meta
+          property="og:description"
+          content="Metoda oporavka vida vežbama za oči postoji od 19.veka. Značajno unapređenje vežbi i načina rada se dogodilo sa Leom Angartom koji od 1996.godine &scaron;irom sveta održava Radionice za decu i odrasle.
+Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;ili naočara bez operacije!"
+        />
+        <meta property="og:title" content="Metoda oporavka vida vežbama za oči" />
+        <meta property="og:url" content="https://online.treningvida.com" />
+        <meta
+          property="og:image"
+          content="https://online.treningvida.com/img/share_box.png/og-image.jpg"
+        ></meta>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -38,15 +51,38 @@ export default function Index({ title, description, content }) {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Online <Link href='/'><a>Trening vida!</a></Link>
+          Online{" "}
+          <Link href="/">
+            <a>Trening vida!</a>
+          </Link>
         </h1>
         <p className={styles.description}>Za decu i odrasle!</p>
         <div className={styles.drustvenemreze}>
           <span>Podeli: </span>
-          <Link href="#"><a className={styles.fb}><Facebook /><span>Facebook-u</span></a></Link>
-          <Link href="#"><a className={styles.tw}><Twitter /><span>Twitter-u</span></a></Link>
-          <Link href="#"><a className={styles.in}><Linkedin /><span>Linkedin-u</span></a></Link>
-          <Link href="#"><a className={styles.mail}><Email /><span>prijateljem</span></a></Link>
+          <Link href="#">
+            <a className={styles.fb}>
+              <Facebook />
+              <span>Facebook-u</span>
+            </a>
+          </Link>
+          <Link href="#">
+            <a className={styles.tw}>
+              <Twitter />
+              <span>Twitter-u</span>
+            </a>
+          </Link>
+          <Link href="#">
+            <a className={styles.in}>
+              <Linkedin />
+              <span>Linkedin-u</span>
+            </a>
+          </Link>
+          <Link href="#">
+            <a className={styles.mail}>
+              <Email />
+              <span>prijateljem</span>
+            </a>
+          </Link>
         </div>
         <div className={styles.grid}>
           {articles.slice(0, 4).map((article, i) => (
@@ -107,17 +143,49 @@ export default function Index({ title, description, content }) {
         </div>
         <div className={styles.drustvenemreze}>
           <span>Podeli: </span>
-          <Link href="#"><a className={styles.fb}><Facebook /><span>Facebook-u</span></a></Link>
-          <Link href="#"><a className={styles.tw}><Twitter /><span>Twitter-u</span></a></Link>
-          <Link href="#"><a className={styles.in}><Linkedin /><span>Linkedin-u</span></a></Link>
-          <Link href="#"><a className={styles.mail}><Email /><span>prijateljem</span></a></Link>
+          <Link href="#">
+            <a className={styles.fb}>
+              <Facebook />
+              <span>Facebook-u</span>
+            </a>
+          </Link>
+          <Link href="#">
+            <a className={styles.tw}>
+              <Twitter />
+              <span>Twitter-u</span>
+            </a>
+          </Link>
+          <Link href="#">
+            <a className={styles.in}>
+              <Linkedin />
+              <span>Linkedin-u</span>
+            </a>
+          </Link>
+          <Link href="#">
+            <a className={styles.mail}>
+              <Email />
+              <span>prijateljem</span>
+            </a>
+          </Link>
         </div>
       </main>
       <footer className={styles.footer}>
         <p>&copy; treningvida.com 2021</p>
-        <Link href="#"><a><Facebook /></a></Link>
-        <Link href="#"><a><Twitter /></a></Link>
-        <Link href="#"><a><Linkedin /></a></Link>
+        <Link href="#">
+          <a>
+            <Facebook />
+          </a>
+        </Link>
+        <Link href="#">
+          <a>
+            <Twitter />
+          </a>
+        </Link>
+        <Link href="#">
+          <a>
+            <Linkedin />
+          </a>
+        </Link>
       </footer>
     </div>
   );
