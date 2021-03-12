@@ -1,18 +1,38 @@
 import Head from "next/head";
+import Link from "next/link";
 import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import marked from "marked";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import { Facebook, Twitter, Linkedin, Email } from "../components/icons/";
 
 export default function Index({ title, description, content }) {
   const articles = content.map((doc) => matter(doc.toString()));
   return (
     <div className={styles.container}>
       <Head>
-        {/* <meta name="viewport" content="initial-scale=1.0, width=device-width" /> */}
-        {/* <meta charSet="utf-8" /> */}
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charSet="utf-8" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest"></link>
         <meta name="Description" content={description} />
         <title>{title}</title>
       </Head>
@@ -21,6 +41,13 @@ export default function Index({ title, description, content }) {
           Online <a href="#">Trening vida!</a>
         </h1>
         <p className={styles.description}>Za decu i odrasle!</p>
+        <div className={styles.drustvenemreze}>
+          <span>Podeli: </span>
+          <Link href="#"><a className={styles.fb}><Facebook /><span>Facebook-u</span></a></Link>
+          <Link href="#"><a className={styles.tw}><Twitter /><span>Twitter-u</span></a></Link>
+          <Link href="#"><a className={styles.in}><Linkedin /><span>Linkedin-u</span></a></Link>
+          <Link href="#"><a className={styles.mail}><Email /><span>prijateljem</span></a></Link>
+        </div>
         <div className={styles.grid}>
           {articles.slice(0, 4).map((article, i) => (
             <section key={i} className={styles.card}>
@@ -46,11 +73,11 @@ export default function Index({ title, description, content }) {
         <div className={styles.grid}>
           {articles.slice(5, 6).map((article, i) => (
             <section key={i} className={styles.instructors}>
-                <h2>{article.data.title}</h2>
-                <h4>{article.data.tagline}</h4>
-                <div
-                  dangerouslySetInnerHTML={{ __html: marked(article.content) }}
-                ></div>
+              <h2>{article.data.title}</h2>
+              <h4>{article.data.tagline}</h4>
+              <div
+                dangerouslySetInnerHTML={{ __html: marked(article.content) }}
+              ></div>
               <div className={styles.isntructorcards}>
                 {articles.slice(6, 8).map((article, i) => (
                   <div key={i} className={styles.inst}>
@@ -78,9 +105,19 @@ export default function Index({ title, description, content }) {
             </section>
           ))}
         </div>
+        <div className={styles.drustvenemreze}>
+          <span>Podeli: </span>
+          <Link href="#"><a className={styles.fb}><Facebook /><span>Facebook-u</span></a></Link>
+          <Link href="#"><a className={styles.tw}><Twitter /><span>Twitter-u</span></a></Link>
+          <Link href="#"><a className={styles.in}><Linkedin /><span>Linkedin-u</span></a></Link>
+          <Link href="#"><a className={styles.mail}><Email /><span>prijateljem</span></a></Link>
+        </div>
       </main>
       <footer className={styles.footer}>
         <p>&copy; treningvida.com 2021</p>
+        <Link href="#"><a><Facebook /></a></Link>
+        <Link href="#"><a><Twitter /></a></Link>
+        <Link href="#"><a><Linkedin /></a></Link>
       </footer>
     </div>
   );

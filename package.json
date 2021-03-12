@@ -6,9 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "yarn build && yarn export"
+    "svg": "svgr -d components/icons/ components/icons/svgs"
   },
   "dependencies": {
+    "@svgr/cli": "^5.5.0",
     "gray-matter": "^4.0.2",
     "marked": "^2.0.1",
     "next": "10.0.8",
