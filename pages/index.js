@@ -20,7 +20,7 @@ export default function Index({ title, description, content }) {
       </Head>
       <main className="main">
         <header>
-          <h1 className={styles.title}>Online — Trening vida</h1>
+          <h1 className={styles.title}>Online — <a href="#">Trening vida!</a></h1>
         </header>
         <div className={styles.grid}>
           {articles.slice(0, 4).map((article, i) => (
