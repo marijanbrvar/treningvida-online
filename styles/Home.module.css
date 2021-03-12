@@ -15,6 +15,10 @@
   justify-content: center;
   align-items: center;
 }
+.grid > section:first-of-type {
+  border: none!important;
+  /* background-color: magenta; */
+}
 
 .footer {
   width: 100%;
@@ -47,7 +51,7 @@
 }
 
 .title {
-  margin: 0;
+  margin: 2em 0 0 0;
   line-height: 1.15;
   font-size: 4rem;
 }
@@ -70,7 +74,6 @@
   max-width: 960px;
   margin-top: 3rem;
 }
-
 .card {
   margin: 1rem;
   flex-basis: 100%;

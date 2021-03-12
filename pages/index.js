@@ -4,8 +4,6 @@ import fs from "fs";
 import matter from "gray-matter";
 import marked from "marked";
 import styles from "../styles/Home.module.css";
-import Navbar from "../comp/Navbar";
-import Footer from "../comp/Footer";
 import Image from "next/image";
 
 export default function Index({ title, description, content }) {
@@ -19,9 +17,10 @@ export default function Index({ title, description, content }) {
         <title>{title}</title>
       </Head>
       <main className="main">
-        <header>
-          <h1 className={styles.title}>Online — <a href="#">Trening vida!</a></h1>
-        </header>
+        <h1 className={styles.title}>
+          Online — <a href="#">Trening vida!</a>
+        </h1>
+        <p className={styles.description}>Za decu i odrasle!</p>
         <div className={styles.grid}>
           {articles.slice(0, 4).map((article, i) => (
             <section key={i} className={styles.card}>
@@ -45,7 +44,9 @@ export default function Index({ title, description, content }) {
           ))}
         </div>
       </main>
-      <Footer />
+      <footer className={styles.footer}>
+        <p>&copy; treningvida.com 2021</p>
+      </footer>
     </div>
   );
 }

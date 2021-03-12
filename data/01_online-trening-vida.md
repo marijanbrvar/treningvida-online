@@ -1,7 +1,6 @@
 ---
-id: 1
-title: Online Trening vida
-tagline: Za decu i odrasle
+title: 
+tagline: 
 image: /img/radionica.png
 alt: radionica — trening vida
 action:
