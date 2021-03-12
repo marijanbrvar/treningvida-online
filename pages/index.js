@@ -26,7 +26,7 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
         <meta property="og:url" content="https://online.treningvida.com" />
         <meta
           property="og:image"
-          content="https://online.treningvida.com/img/share_box.png/og-image.jpg"
+          content="https://online.treningvida.com/img/share_box.png"
         ></meta>
         <link
           rel="apple-touch-icon"
