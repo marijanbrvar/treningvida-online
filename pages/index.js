@@ -14,16 +14,14 @@ export default function Index({ title, description, content}) {
         <meta name="Description" content={description} />
         <title>{title}</title>
       </Head>
-      <div>
           {articles.map((article,i ) => (
-            <div key={i}>
+            <section key={i}>
               <h3>{article.data.title}</h3>
               <h4>{article.data.tagline}</h4>
               <div dangerouslySetInnerHTML={{__html: marked(article.content)}}>
               </div>
-            </div>
+            </section>
           ))}
-      </div>
     </>
   );
 }
