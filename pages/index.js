@@ -51,7 +51,7 @@ export default function Index({ title, description, content }) {
                 <div
                   dangerouslySetInnerHTML={{ __html: marked(article.content) }}
                 ></div>
-              <div className={styles.intructorcards}>
+              <div className={styles.isntructorcards}>
                 {articles.slice(6, 8).map((article, i) => (
                   <div key={i} className={styles.inst}>
                     <div className={styles.image}>

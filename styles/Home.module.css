@@ -85,7 +85,7 @@
   border-radius: 10px;
   background-color: #0066ff1e;
 }
-.intructorcards{
+.isntructorcards{
   display: flex;
   flex-wrap: wrap;
   margin-top: 1em;
@@ -174,5 +174,23 @@
   }
   .card {
     flex-direction: column;
+  }
+  .inst{
+    border: none!important;
+    width: 100%!important;
+    margin: 0!important;
+    padding: 0!important;
+    flex-direction: column!important;
+  }
+  .instructors{
+    margin-bottom: 4em;
+  }
+  .inst div{
+    flex-direction: column!important;
+    /* padding: 0!important; */
+  }
+  .instructors .image {
+    display: flex;
+    justify-content: center;
   }
 }
