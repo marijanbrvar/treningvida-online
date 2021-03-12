@@ -1,7 +1,8 @@
 ---
 title: Gorica Mijović
 tagline: terapeut vida
-image:
+image: /img/gmportret.png
+alt: radionica — trening vida
 action:
 action-label:
 ---

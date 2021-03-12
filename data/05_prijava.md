@@ -2,7 +2,8 @@
 id: 5
 title: Prijava
 tagline: Šta online Trening vida obuhvata?
-image:
+image: /img/box.png
+alt: radionica — trening vida paket sta je u paketu
 action:
 action-label: Prijava
 ---

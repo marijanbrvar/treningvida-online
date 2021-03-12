@@ -2,6 +2,7 @@
 title: Instruktori
 tagline:
 image:
+alt: 
 action:
 action-label:
 ---

@@ -2,7 +2,8 @@
 id: 3
 title: Za koga je online Trening vida?
 tagline: Ko su učesnici?
-image:
+image: /img/fands.png
+alt: Za koga je radionica vida
 action:
 action-label:
 ---

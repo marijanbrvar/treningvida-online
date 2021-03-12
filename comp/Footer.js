@@ -1,7 +1,9 @@
+import styles from "../styles/Home.module.css";
+
 const Footer = () => {
   return (
-    <footer>
-      Copyright Gorica Mijovic 2021
+    <footer className={styles.footer}>
+      <p>&copy; treningvida.com 2021</p>
     </footer>
   )
 }

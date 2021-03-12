@@ -1,7 +1,8 @@
 ---
 title: Leo Angart
 tagline: terapeut vida
-image:
+image: /img/leo.png
+alt: Leo Angart
 action:
 action-label:
 ---

@@ -3,7 +3,7 @@ const Navbar = () => {
     <header>
       <nav>
         <div className="logo">
-          <h1>Trening vida - online</h1>
+          <h1>Online — Trening vida</h1>
         </div>
       </nav>
     </header>

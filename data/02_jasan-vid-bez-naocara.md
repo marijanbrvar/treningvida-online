@@ -2,7 +2,8 @@
 id: 2
 title: Jasan vid bez naočara
 tagline: Oporavi svoj vid trajno vežbama za oči
-image:
+image: /img/gandl.png
+alt: Leo Angart i Gorica Mijovic
 action:
 action-label:
 ---
