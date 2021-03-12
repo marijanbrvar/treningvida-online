@@ -1,4 +1,5 @@
 ---
+id: 2
 title: Jasan vid bez naočara
 tagline: Oporavi svoj vid trajno vežbama za oči
 image: 

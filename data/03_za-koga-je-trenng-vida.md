@@ -1,4 +1,5 @@
 ---
+id: 3
 title: Za koga je online Trening vida?
 tagline: Ko su učesnici?
 image: 

@@ -1,4 +1,5 @@
 ---
+id: 4
 title: Agenda
 tagline: Šta online Trening vida obuhvata?
 image: 
