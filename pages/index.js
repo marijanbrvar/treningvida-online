@@ -22,6 +22,7 @@ export default function Index({ title, description, content }) {
           content="Metoda oporavka vida vežbama za oči postoji od 19.veka. Značajno unapređenje vežbi i načina rada se dogodilo sa Leom Angartom koji od 1996.godine &scaron;irom sveta održava Radionice za decu i odrasle.
 Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;ili naočara bez operacije!"
         />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Metoda oporavka vida vežbama za oči" />
         <meta property="og:url" content="https://online.treningvida.com" />
         <meta
