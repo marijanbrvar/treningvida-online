@@ -140,12 +140,7 @@
   color: #000000c4;
   margin-bottom: 0;
 }
-.card h4, .instructors h4 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: #616161;
-  margin-top: 0.3em;
-}
+
 .card h3, .instructors h3 {
   margin: 0 0 1rem 0;
   font-size: 1.2rem;
