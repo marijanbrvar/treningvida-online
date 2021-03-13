@@ -19,6 +19,10 @@
   /* background-color: magenta; */
 }
 
+.dnone {
+  display: none;
+}
+
 .footer {
   width: 100%;
   height: 100px;
@@ -95,6 +99,10 @@
   font-size: 2rem;
   font-weight: 500;
   margin: 0 0 1em 0.2em;
+}
+
+.link {
+  color: #005cfc;
 }
 
 .grid {
@@ -214,7 +222,7 @@
   color: #0000008a;
 }
 .drustvenemreze > a {
-  color: #fff;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,12 +237,12 @@
   margin: 0 0.5em;
  }
 .drustvenemreze a span {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   padding: 0 0.5em 0 0;
 }
-.formamobile {
-  display: none;
+.forma {
+  width: 100%;
 }
 @media (max-width: 600px) {
   .grid {
@@ -293,12 +301,6 @@
     border-radius: 10%;
     border: none!important;
     background-color: #fff;
-  }
-  .forma {
-    display: none;
-  }
-  .formamobile {
-    display: block;
   }
   .hero {
     position: relative;

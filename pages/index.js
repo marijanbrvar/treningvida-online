@@ -63,7 +63,7 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
               odgovoriti na sva pitanja vezano za tvoj problem sa vidom i
               definisati odgovarajuće opcije Trening vida.{" "}
             </h2>
-            <button className={styles.btn}>Saznaj više</button>
+            <a href="#forma" className={styles.btn}>Saznaj više</a>
           </div>
         </div>
 
@@ -82,7 +82,7 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
             </a>
           </Link>
           <Link href="https://forms.gle/NRVnH3bxygbtN5nTA">
-            <a className={styles.mail}>
+            <a target="_blank" rel="noreferrer"  className={styles.mail}>
               <Email />
               <span>Prijateljem</span>
             </a>
@@ -145,10 +145,10 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
             </section>
           ))}
         </div>
-        <div className={styles.forma}>
+        <div className={styles.forma} id="forma">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdRqrDEVZV8nOswHY-T0BShNxSFl0lVwR6X3sIFaXiVOqp2TQ/viewform?embedded=true"
-            width="740"
+            width="100%"
             height="837"
             frameBorder="0"
             marginHeight="0"
@@ -157,36 +157,28 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
             Loading…
           </iframe>
         </div>
-        <div className={styles.formamobile}>
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdRqrDEVZV8nOswHY-T0BShNxSFl0lVwR6X3sIFaXiVOqp2TQ/viewform?embedded=true"
-            width="320"
-            height="837"
-            frameBorder="0"
-            marginHeight="0"
-            marginWidth="0"
-          >
-            Loading…
-          </iframe>
-        </div>
+      
       </main>
       <footer className={styles.footer}>
-        <p>&copy; treningvida.com 2021</p>
-        <Link href="#">
-          <a>
-            <Facebook />
-          </a>
-        </Link>
-        <Link href="#">
-          <a>
-            <Twitter />
-          </a>
-        </Link>
-        <Link href="#">
-          <a>
-            <Linkedin />
-          </a>
-        </Link>
+        <Link href="https://treningvida.com"><a target="_blank" rel="noreferrer"><p>&copy; treningvida.com 2021</p></a></Link>
+        <Link href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonline.treningvida.com">
+            <a target="_blank" rel="noreferrer">
+              <Facebook />
+              <span className={styles.dnone}>Facebook</span>
+            </a>
+          </Link>
+          <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https://online.treningvida.com&title='Trening vida!'">
+            <a target="_blank" rel="noreferrer" >
+              <Linkedin />
+              <span className={styles.dnone}>Linkedin</span>
+            </a>
+          </Link>
+          <Link href="https://forms.gle/NRVnH3bxygbtN5nTA">
+            <a target="_blank" rel="noreferrer">
+              <Email />
+              <span className={styles.dnone}>Prijateljem</span>
+            </a>
+          </Link>
       </footer>
     </div>
   );
