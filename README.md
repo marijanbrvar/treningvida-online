@@ -16,8 +16,7 @@ This project, a Landing page for an online workshop, was created as a part of fa
 [Live Demo Link](https://online.treningvida.com/) running on Vercel
 
 ## Getting Started
-
-In this project, we will replicate the archived version of the website The Next Web. The project's primary goal is to apply responsive design techniques so that the website behaves differently depending on the screen's size where the website is displayed.
+Clone this project and install dependances by using Yarn
 
 ## Authors
 
