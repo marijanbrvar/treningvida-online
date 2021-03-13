@@ -122,7 +122,7 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
               <div
                 dangerouslySetInnerHTML={{ __html: marked(article.content) }}
               ></div>
-              <div className={styles.isntructorcards}>
+              <div className={styles.instructorcards}>
                 {articles.slice(6, 8).map((article, i) => (
                   <div key={i} className={styles.inst}>
                     <div className={styles.image}>
@@ -171,20 +171,17 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
         </Link>
         <Link href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonline.treningvida.com">
           <a target="_blank" rel="noreferrer">
-            <Facebook />
-            <span className={styles.dnone}>Facebook</span>
+          <img src="img/facebook.svg" alt="Facebook" width="20" height="20" />
           </a>
         </Link>
         <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https://online.treningvida.com&title='Trening vida!'">
           <a target="_blank" rel="noreferrer">
-            <Linkedin />
-            <span className={styles.dnone}>Linkedin</span>
+            <img src="img/linkedin.svg" alt="Linked in" width="20" height="20" />
           </a>
         </Link>
         <Link href="mailto:treningvida@gmail.com?subject=Online%20Trening%20Vida">
           <a target="_blank" rel="noreferrer">
-            <Email />
-            <span className={styles.dnone}>Prijateljem</span>
+            <img src="img/email.svg" alt="Email" width="20" height="20" />
           </a>
         </Link>
       </footer>

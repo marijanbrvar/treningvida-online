@@ -14,9 +14,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .grid > section:first-of-type {
-  border: none!important;
-  /* background-color: magenta; */
+  border: none !important;
+}
+.main > div:nth-child(3) > section:nth-child(1) > .image > div {
+  border: none;
 }
 
 .dnone {
@@ -36,10 +39,11 @@
   font-size: 0.8125rem;
 }
 
-.footer svg{
+.footer img {
   margin-left: 1rem;
-  color: #9b9b9b;
+  fill: #9b9b9b;
 }
+
 .footer a {
   display: flex;
   justify-content: center;
@@ -47,7 +51,7 @@
 }
 
 .hero {
-  background: url('/img/background.svg') no-repeat;
+  background: url("/img/background.svg") no-repeat;
   background-position: center;
   background-size: cover;
   padding: 4em 12em;
@@ -61,9 +65,9 @@
   padding: 0.5em 1.5em;
   font-size: 1rem;
   text-transform: uppercase;
-  font-family:'Libre Franklin', sans-serif ;
+  font-family: "Libre Franklin", sans-serif;
   font-weight: 400;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
 .hero .btn:active,
@@ -82,7 +86,7 @@
   margin: 0 0 1em 0.4em;
 }
 
-.hero .title{
+.hero .title {
   line-height: 1.15;
   font-size: 4rem;
   margin: 0;
@@ -123,30 +127,39 @@
   border-radius: 10px;
   background-color: #0066ff1e;
 }
-.isntructorcards{
+.instructorcards {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1em;
 }
 
+.instructorcards a {
+  color: #0066ff;
+}
+
+.instructorcards a:hover, .instructorcards a:active, .instructorcards a:focus  {
+  color: #b50000;
+}
+
 .instructors .image {
   display: flex;
-  justify-content: flex-start!important;
+  justify-content: flex-start !important;
 }
 .instructors .image div {
   border-radius: 50%;
-  border: 8px dashed #0066ff4f!important;
+  border: 8px dashed #0066ff4f !important;
   background-color: #fff;
 }
 
-.inst{
-  border: 4px dashed #0066ff4f!important;
+.inst {
+  border: 4px dashed #0066ff4f !important;
   width: 46%;
-  margin: 0 1em!important;
-  flex-direction: column!important;
+  margin: 0 1em !important;
+  flex-direction: column !important;
   justify-content: flex-start;
 }
-.card, .inst {
+.card,
+.inst {
   margin: 1rem 0;
   padding: 1.5em;
   text-align: left;
@@ -157,34 +170,39 @@
   display: flex;
   flex-direction: row-reverse;
 }
-.card .image, .instructors .image {
+.card .image,
+.instructors .image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.instructors .image div, .card .image div{
+.instructors .image div,
+.card .image div {
   border-radius: 50%;
   border: 8px dashed #01468f46;
   background-color: #fff;
 }
-.card h2, .instructors h2 {
-  font-family: 'Roboto Slab', serif;
+.card h2,
+.instructors h2 {
+  font-family: "Roboto Slab", serif;
   font-size: 2.4rem;
   font-weight: 400;
   color: #000000c4;
   margin-bottom: 0;
 }
 
-.card h3, .instructors h3 {
+.card h3,
+.instructors h3 {
   margin: 0 0 1rem 0;
   font-size: 1.4rem;
   font-weight: 400;
   color: #616161;
   margin-bottom: 1em;
-  margin-top: .2em;
+  margin-top: 0.2em;
 }
 
-.card p, .instructors p {
+.card p,
+.instructors p {
   margin: 0.4em 0.6em 0 0;
   font-size: 1.1rem;
   line-height: 1.7;
@@ -227,14 +245,14 @@
   justify-content: center;
   height: 2.4em;
   font-size: 0.7rem;
-  border-radius: .5em;
-  margin: 0 .5em;
+  border-radius: 0.5em;
+  margin: 0 0.5em;
 }
 .drustvenemreze a svg {
   width: 16px;
   width: 16px;
   margin: 0 0.5em;
- }
+}
 .drustvenemreze a span {
   font-size: 14px;
   font-weight: 500;
@@ -249,7 +267,7 @@
     flex-direction: column;
   }
   .main {
-    padding:0;
+    padding: 0;
   }
   .title {
     margin: 0.5em 0 0 0;
@@ -259,12 +277,12 @@
   .card {
     flex-direction: column;
   }
-  .inst{
-    border: none!important;
-    width: 100%!important;
-    margin: 0!important;
-    padding: 0!important;
-    flex-direction: column!important;
+  .inst {
+    border: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-direction: column !important;
     align-items: flex-start;
   }
   .inst .image {
@@ -273,11 +291,11 @@
   .inst h2 {
     margin: 0;
   }
-  .instructors{
+  .instructors {
     margin-bottom: 4em;
   }
-  .inst div{
-    flex-direction: column!important;
+  .inst div {
+    flex-direction: column !important;
     /* padding: 0!important; */
   }
   .instructors .image {
@@ -291,48 +309,48 @@
   .drustvenemreze span:first-child {
     display: none;
   }
-  .instructors .image div, .card .image div{
+  .instructors .image div,
+  .card .image div {
     border-radius: 10%;
     border: none;
     background-color: #fff;
   }
   .instructors .image div {
     border-radius: 10%;
-    border: none!important;
+    border: none !important;
     background-color: #fff;
   }
   .hero {
     position: relative;
-    background: url('/img/background.svg') no-repeat;
+    background: url("/img/background.svg") no-repeat;
     background-position: center;
     background-size: cover;
     padding: 1em;
     text-align: center;
   }
-  
+
   .hero h2 {
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 2rem;
     width: 100%;
   }
-  
-  .hero .title{
+
+  .hero .title {
     line-height: 1;
     font-size: 4rem;
     margin: 0;
   }
-  
+
   .hero .title,
   .hero .description {
     text-align: center;
   }
-  
+
   .hero .description {
     line-height: 1.5;
     font-size: 2rem;
     font-weight: 500;
     margin: 0;
   }
-  
 }
