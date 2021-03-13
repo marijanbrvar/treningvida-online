@@ -1,11 +1,12 @@
 # Landing page 
 Online Trening-vida (Serbian local site)
 
+This project, a Landing page for an online workshop, was created as a part of facebook's advertising campaign. The Landing page's primary goal is to deliver structured information regarding the online seminar and generate Leeds at the Facebook campaign.
 
 ![screenshot](./smallscreen.png)
 ![screenshot](./largescreen.png)
 
-## Building with Responsive Design Replica of the website The Next Web
+## Created by using Next js framework and CSS
 
 - Next JS framework JS
 - CSS
@@ -16,7 +17,7 @@ Online Trening-vida (Serbian local site)
 
 ## Getting Started
 
-In this project, we will replicate the archived version of the website The Next Web. The main goal of the project is to apply responsive design techniques so that the website behaves differently depending on the size of the screen where the website is displayed.
+In this project, we will replicate the archived version of the website The Next Web. The project's primary goal is to apply responsive design techniques so that the website behaves differently depending on the screen's size where the website is displayed.
 
 ## Authors
 
