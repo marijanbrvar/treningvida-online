@@ -10,6 +10,6 @@ action-label:
 
 **PRAKTIČAN RAD** obuhvata testove vida, merenje dioptrije, vežbe za oči vezano za probleme sa vidom i relaksaciju očiju.
 
-**UPUTSTVA** su vezana za praktičan rad i obuhvataju plan rada za pojedinca uz informacije o tipičnim greškama i najboljim praksama za brz progres.
+**UPUTSTVA** za praktičan rad obuhvataju plan rada za pojedinca uz informacije o najboljim praksama za brz progres.
 
-**SAVETI ZA NEGU I OČUVANJE VIDA** obuvataju teme kao što su suvo oko, prevencija katarakte, zaštita očiju, rad na digitalnim ekranima, naočare za sunce, provera vida kod dece mlađe od 7 godina i još mnogo toga…
+**SAVETI ZA NEGU I OČUVANJE VIDA** obuvataju teme kao što su suve oči, prevencija katarakte, zaštita očiju, rad na digitalnim ekranima, naočare za sunce, provera vida kod dece mlađe od 7 godina i još mnogo toga…

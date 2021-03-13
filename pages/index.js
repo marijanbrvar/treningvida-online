@@ -53,6 +53,7 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
         />
         <link rel="manifest" href="/site.webmanifest"></link>
         <meta name="Description" content={description} />
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=604ca5a9b7dede001191f262&product=inline-share-buttons" async="async"></script>
         <title>{title}</title>
       </Head>
       <main className={styles.main}>
@@ -62,34 +63,40 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
             <a>Trening vida!</a>
           </Link>
         </h1>
-        <p className={styles.description}>Za decu i odrasle!</p>
+        <p className={styles.description}>Za decu i odrasle</p>
         <div className={styles.drustvenemreze}>
           <span>Podeli: </span>
-          <Link href="#">
-            <a className={styles.fb}>
+          <Link href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonline.treningvida.com">
+            <a target="_blank" rel="noreferrer" className={styles.fb}>
               <Facebook />
               <span>Facebook-u</span>
             </a>
           </Link>
-          <Link href="#">
-            <a className={styles.tw}>
+          <Link href="https://twitter.com/intent/tweet?url=https://online.treningvida.com&text=Trening—vida!">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              data-show-count="false"
+              className={styles.tw}
+            >
               <Twitter />
               <span>Twitter-u</span>
             </a>
           </Link>
-          <Link href="#">
-            <a className={styles.in}>
+          <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https://online.treningvida.com&title='Trening vida!'">
+            <a target="_blank" rel="noreferrer" className={styles.in}>
               <Linkedin />
               <span>Linkedin-u</span>
             </a>
           </Link>
-          <Link href="#">
+          <Link href="https://forms.gle/NRVnH3bxygbtN5nTA">
             <a className={styles.mail}>
               <Email />
               <span>prijateljem</span>
             </a>
           </Link>
         </div>
+        <div class="sharethis-inline-share-buttons"></div>
         <div className={styles.grid}>
           {articles.slice(0, 4).map((article, i) => (
             <section key={i} className={styles.card}>
@@ -147,32 +154,17 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
             </section>
           ))}
         </div>
-        <div className={styles.drustvenemreze}>
-          <span>Podeli: </span>
-          <Link href="#">
-            <a className={styles.fb}>
-              <Facebook />
-              <span>Facebook-u</span>
-            </a>
-          </Link>
-          <Link href="#">
-            <a className={styles.tw}>
-              <Twitter />
-              <span>Twitter-u</span>
-            </a>
-          </Link>
-          <Link href="#">
-            <a className={styles.in}>
-              <Linkedin />
-              <span>Linkedin-u</span>
-            </a>
-          </Link>
-          <Link href="#">
-            <a className={styles.mail}>
-              <Email />
-              <span>prijateljem</span>
-            </a>
-          </Link>
+        <div>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeEsXu5NUioKIN3vgMwFJDyx70Uv78CcbS4S2FU-iv5b64Meg/viewform?embedded=true"
+            width="640"
+            height="649"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+          >
+            Loading…
+          </iframe>
         </div>
       </main>
       <footer className={styles.footer}>
