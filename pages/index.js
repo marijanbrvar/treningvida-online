@@ -6,13 +6,15 @@ import matter from "gray-matter";
 import marked from "marked";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import { Facebook, Twitter, Linkedin, Email } from "../components/icons/";
+import { Facebook, Linkedin, Email } from "../components/icons/";
+import FacebookPixel from '../components/Facebook-pixel'
 
-export default function Index({ title, description, content }) {
+export default function Index({ title, description, content, name }) {
   const articles = content.map((doc) => matter(doc.toString()));
   return (
     <div className={styles.container}>
       <Head>
+        {name === 'FacebookPixel' && <FacebookPixel />}
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta charSet="utf-8" />
         <meta name="twitter:card" content="summary" key="twcard" />
@@ -63,7 +65,9 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
               odgovoriti na sva pitanja vezano za tvoj problem sa vidom i
               definisati odgovarajuće opcije Trening vida.{" "}
             </h2>
-            <a href="#forma" className={styles.btn}>Saznaj više</a>
+            <Link href="#forma" ><a className={styles.btn}>
+              Saznaj više
+            </a></Link>
           </div>
         </div>
 
@@ -81,8 +85,8 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
               <span>Linkedin</span>
             </a>
           </Link>
-          <Link href="https://forms.gle/NRVnH3bxygbtN5nTA">
-            <a target="_blank" rel="noreferrer"  className={styles.mail}>
+          <Link href="mailto:treningvida@gmail.com?subject=Online%20Trening%20Vida">
+            <a target="_blank" rel="noreferrer" className={styles.mail}>
               <Email />
               <span>Prijateljem</span>
             </a>
@@ -153,32 +157,36 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
             frameBorder="0"
             marginHeight="0"
             marginWidth="0"
+            title="LeadForma"
           >
             Loading…
           </iframe>
         </div>
-      
       </main>
       <footer className={styles.footer}>
-        <Link href="https://treningvida.com"><a target="_blank" rel="noreferrer"><p>&copy; treningvida.com 2021</p></a></Link>
+        <Link href="https://treningvida.com">
+          <a target="_blank" rel="noreferrer">
+            <p>&copy; treningvida.com 2021</p>
+          </a>
+        </Link>
         <Link href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonline.treningvida.com">
-            <a target="_blank" rel="noreferrer">
-              <Facebook />
-              <span className={styles.dnone}>Facebook</span>
-            </a>
-          </Link>
-          <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https://online.treningvida.com&title='Trening vida!'">
-            <a target="_blank" rel="noreferrer" >
-              <Linkedin />
-              <span className={styles.dnone}>Linkedin</span>
-            </a>
-          </Link>
-          <Link href="https://forms.gle/NRVnH3bxygbtN5nTA">
-            <a target="_blank" rel="noreferrer">
-              <Email />
-              <span className={styles.dnone}>Prijateljem</span>
-            </a>
-          </Link>
+          <a target="_blank" rel="noreferrer">
+            <Facebook />
+            <span className={styles.dnone}>Facebook</span>
+          </a>
+        </Link>
+        <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https://online.treningvida.com&title='Trening vida!'">
+          <a target="_blank" rel="noreferrer">
+            <Linkedin />
+            <span className={styles.dnone}>Linkedin</span>
+          </a>
+        </Link>
+        <Link href="mailto:treningvida@gmail.com?subject=Online%20Trening%20Vida">
+          <a target="_blank" rel="noreferrer">
+            <Email />
+            <span className={styles.dnone}>Prijateljem</span>
+          </a>
+        </Link>
       </footer>
     </div>
   );

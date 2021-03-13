@@ -67,8 +67,7 @@
 }
 
 .hero .btn:active,
-.hero .btn:hover,
-.hero .btn:focus {
+.hero .btn:hover {
   background-color: #11111187;
 }
 .hero .herocontainer {
