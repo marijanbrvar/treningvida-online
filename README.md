@@ -3,8 +3,7 @@ Online Trening-vida (Serbian local site)
 
 This project, a Landing page for an online workshop, was created as a part of facebook's advertising campaign. The Landing page's primary goal is to deliver structured information regarding the online seminar and generate Leeds at the Facebook campaign.
 
-![screenshot](./smallscreen.png)
-![screenshot](./largescreen.png)
+![screenshot](./onlinetreningvida.png)
 
 ## Created by using Next js framework and CSS
 
@@ -16,6 +15,7 @@ This project, a Landing page for an online workshop, was created as a part of fa
 [Live Demo Link](https://online.treningvida.com/) running on Vercel
 
 ## Getting Started
+
 Clone this project and install dependances by using Yarn
 
 ## Authors
