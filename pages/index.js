@@ -7,6 +7,7 @@ import marked from "marked";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import { Facebook, Twitter, Linkedin, Email } from "../components/icons/";
+import { FacebookShareButton, FacebookIcon } from "next-share";
 
 export default function Index({ title, description, content }) {
   const articles = content.map((doc) => matter(doc.toString()));
@@ -65,12 +66,12 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
         <p className={styles.description}>Za decu i odrasle!</p>
         <div className={styles.drustvenemreze}>
           <span>Podeli: </span>
-          <Link href="#">
+          {/* <Link href="#">
             <a className={styles.fb}>
               <Facebook />
               <span>Facebook-u</span>
             </a>
-          </Link>
+          </Link> */}
           <Link href="#">
             <a className={styles.tw}>
               <Twitter />
