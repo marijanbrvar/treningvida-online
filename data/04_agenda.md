@@ -1,7 +1,7 @@
 ---
 title: Agenda
 tagline: Šta online Trening vida obuhvata?
-image: /img/infog.png
+image: /img/box.png
 alt: radionica — trening vida infografik
 action:
 action-label:

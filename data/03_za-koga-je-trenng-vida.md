@@ -17,5 +17,5 @@ Online Trening vida je namenjen polaznicima sa sledećim problemima:
 **Deca od 8 do 12 godina** — individualni Trening vida  
 <small>Deca učestvuju na online Treningu vida uz obavezno prisustvo jednog roditelja.</small>
 
-**Odrasli od 13 do 113 godina** — individualni i grupni Trening do 5 učesnika
+**Odrasli od 13 do 113 godina** — individualni i grupni Trening do 5 učesnika  
 <small>Mladi ljudi od 13 do 17 godina mogu pohađati Trening uz prisustvo jednog roditelja bez dodatnih troškova.</small>
