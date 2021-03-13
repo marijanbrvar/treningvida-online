@@ -1,6 +1,5 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +7,7 @@
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -43,31 +42,59 @@
   align-items: center;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.hero {
+  background: url('/img/background.svg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 4em 12em;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.hero .btn {
+  outline: none;
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family:'Libre Franklin', sans-serif ;
+  font-weight: 400;
+  border-radius: .3rem;
 }
 
-.title {
-  margin: 2em 0 0 0;
+.hero .btn:active,
+.hero .btn:hover,
+.hero .btn:focus {
+  background-color: #11111187;
+}
+.hero .herocontainer {
+  padding: 0;
+}
+
+.hero h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  width: 50%;
+  margin: 0 0 1em 0.4em;
+}
+
+.hero .title{
   line-height: 1.15;
   font-size: 4rem;
+  margin: 0;
 }
 
-.title,
-.description {
-  text-align: center;
+.hero .title,
+.hero .description {
+  text-align: left;
 }
 
-.description {
+.hero .description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 1em 0.2em;
 }
 
 .grid {
@@ -206,7 +233,9 @@
   font-weight: 500;
   padding: 0 0.5em 0 0;
 }
-
+.formamobile {
+  display: none;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -265,4 +294,44 @@
     border: none!important;
     background-color: #fff;
   }
+  .forma {
+    display: none;
+  }
+  .formamobile {
+    display: block;
+  }
+  .hero {
+    position: relative;
+    background: url('/img/background.svg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+  
+  .hero .title{
+    line-height: 1;
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .hero .title,
+  .hero .description {
+    text-align: center;
+  }
+  
+  .hero .description {
+    line-height: 1.5;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  
 }

@@ -16,7 +16,6 @@ export default function Index({ title, description, content }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta charSet="utf-8" />
         <meta name="twitter:card" content="summary" key="twcard" />
-        {/* <meta name="twitter:creator" content="@treningvida" key="twhandle" /> */}
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="628" />
         <meta
@@ -51,52 +50,44 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest"></link>
         <meta name="Description" content={description} />
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=604ca5a9b7dede001191f262&product=inline-share-buttons" async="async"></script>
         <title>{title}</title>
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Online{" "}
-          <Link href="/">
-            <a>Trening vida!</a>
-          </Link>
-        </h1>
-        <p className={styles.description}>Za decu i odrasle</p>
+        <div className={styles.hero}>
+          <div className={styles.herocontainer}>
+            <h1 className={styles.title}>Online Trening vida!</h1>
+            <p className={styles.description}>Za decu i odrasle</p>
+            <h2>
+              Zakaži 15 min besplatne individualne konsultacije na kojim ćemo
+              odgovoriti na sva pitanja vezano za tvoj problem sa vidom i
+              definisati odgovarajuće opcije Trening vida.{" "}
+            </h2>
+            <button className={styles.btn}>Saznaj više</button>
+          </div>
+        </div>
+
         <div className={styles.drustvenemreze}>
           <span>Podeli: </span>
           <Link href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonline.treningvida.com">
             <a target="_blank" rel="noreferrer" className={styles.fb}>
               <Facebook />
-              <span>Facebook-u</span>
-            </a>
-          </Link>
-          <Link href="https://twitter.com/intent/tweet?url=https://online.treningvida.com&text=Trening—vida!">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              data-show-count="false"
-              className={styles.tw}
-            >
-              <Twitter />
-              <span>Twitter-u</span>
+              <span>Facebook</span>
             </a>
           </Link>
           <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https://online.treningvida.com&title='Trening vida!'">
             <a target="_blank" rel="noreferrer" className={styles.in}>
               <Linkedin />
-              <span>Linkedin-u</span>
+              <span>Linkedin</span>
             </a>
           </Link>
           <Link href="https://forms.gle/NRVnH3bxygbtN5nTA">
             <a className={styles.mail}>
               <Email />
-              <span>prijateljem</span>
+              <span>Prijateljem</span>
             </a>
           </Link>
         </div>
-        <div class="sharethis-inline-share-buttons"></div>
         <div className={styles.grid}>
           {articles.slice(0, 4).map((article, i) => (
             <section key={i} className={styles.card}>
@@ -154,11 +145,23 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
             </section>
           ))}
         </div>
-        <div>
+        <div className={styles.forma}>
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeEsXu5NUioKIN3vgMwFJDyx70Uv78CcbS4S2FU-iv5b64Meg/viewform?embedded=true"
-            width="640"
-            height="649"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdRqrDEVZV8nOswHY-T0BShNxSFl0lVwR6X3sIFaXiVOqp2TQ/viewform?embedded=true"
+            width="740"
+            height="837"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+          >
+            Loading…
+          </iframe>
+        </div>
+        <div className={styles.formamobile}>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdRqrDEVZV8nOswHY-T0BShNxSFl0lVwR6X3sIFaXiVOqp2TQ/viewform?embedded=true"
+            width="320"
+            height="837"
             frameBorder="0"
             marginHeight="0"
             marginWidth="0"
