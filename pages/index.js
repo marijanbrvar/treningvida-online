@@ -56,6 +56,7 @@ Preko 1000 polaznika Treninga vida u na&scaron;oj zemlji su se već re&scaron;il
         <title>{title}</title>
       </Head>
       <main className={styles.main}>
+        <div><FacebookPixel name="FacebookPixel"/></div>
         <div className={styles.hero}>
           <div className={styles.herocontainer}>
             <h1 className={styles.title}>Online Trening vida!</h1>

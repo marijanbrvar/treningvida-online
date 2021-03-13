@@ -18,7 +18,7 @@
 .grid > section:first-of-type {
   border: none !important;
 }
-.main > div:nth-child(3) > section:nth-child(1) > .image > div {
+.main > div:nth-child(4) > section:nth-child(1) > .image > div {
   border: none;
 }
 
@@ -254,8 +254,8 @@
   margin: 0 0.5em;
 }
 .drustvenemreze a span {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 700;
   padding: 0 0.5em 0 0;
 }
 .forma {
