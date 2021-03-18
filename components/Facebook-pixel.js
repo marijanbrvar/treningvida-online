@@ -10,7 +10,7 @@ export default () => (
   n.queue=[];t=b.createElement(e);t.async=!0;
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-   fbq('init', '348337919785762'); 
+   fbq('init', '224700136049051'); 
    fbq('track', 'PageView');`,
       }}
     />
@@ -18,7 +18,7 @@ export default () => (
       <img
         height="1"
         width="1"
-        src="https://www.facebook.com/tr?id=348337919785762&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=224700136049051&ev=PageView&noscript=1"
       />
     </noscript>
   </React.Fragment>
